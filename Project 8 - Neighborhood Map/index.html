@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Neighbourhood Map</title>
+	
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,700">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+	
+	<link rel="stylesheet" href="plugins/responsiveslides/responsiveslides.css" media="all">
+</head>
+<body class="menu-hidden">
+	<div id="flex-containter">
+		<div id="left-side">
+			<div id="filter-box">
+				<h2>My location</h2>
+				<input type="text" id="keyword" data-bind="textInput: currentFilter">
+			</div>
+			<div id="list-box">
+				<ul class="location-list" data-bind="foreach: filteredPlaces">
+					<li data-bind="text: name, click: $parent.showMarkerInfo, attr: {placeIndex: $index}"></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main">
+			<div id="header">
+				<a href="#" class="menu-icon">
+					<i id="icon-list">☰</i>
+				</a>
+			</div>
+			<div id="map"></div>
+		</div>
+		<div id="images"></div>
+	</div>
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="plugins/responsiveslides/responsiveslides.min.js"></script>
+	<script src="js/lib/knockout-3.4.2.js"></script>
+	<script src="js/app.js"></script>
+	
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD31TZvDtY9hEnf5YcccoaIaALjEronkO8&libraries=places&callback=octopus.initMap"
+    async defer onerror="octopus.mapLoadingError()"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+You've learned a lot about web development so far. I want you to take a moment to write down your thoughts about web development here. Answer the following questions:
+  * What new skills have you learned?
+  * What has been easy?
+  * What has been difficult?
+  * How have you used the problem solving strategies from the first project to overcome challenges so far?
+
+---
+
+Your response goes here!
+
+* What new skills have you learned?
+I've learnt skills about how to put tags nested properly. For example, putting <strong> or <em> tags inside a paragraph tag.
+
+* What has been easy?
+It's easy to to seperate paragraphs by a paragraph tag or a heading tag.
+
+* What has been difficult?
+It's to find the tag to represent a supersub and a line break.
+
+* How have you used the problem solving strategies from the first project to overcome challenges so far?
+My strategy is firstly to orgranize the structure of the page properly and make it formatted correctly later.

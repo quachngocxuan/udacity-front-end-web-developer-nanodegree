@@ -1,0 +1,32 @@
+/* add your CSS here */
+.picture {
+	width: 300px;
+	margin-bottom: 15px;
+}
+
+.border {
+	border-style: solid;
+	border-width: thin;
+	border-color: rgb(232, 227, 227);
+	padding: 15px 10px;
+}
+
+.main-frame {
+	width: 300px;
+}
+
+.interesting-fact {
+	font-style: italic;
+}
+
+.animal-fact {
+	font-weight: bold;
+}
+
+.fact-list {
+	padding-left: 0;
+}
+
+.fact-item {
+	list-style-type: none;
+}
